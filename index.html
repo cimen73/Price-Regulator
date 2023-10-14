@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Expence Calculator
+
+
+    </h1>
+    <div class="container">
+        <h3 class="greet">WELCOME:) <input type="text" placeholder="Enter your name...."></h3>
+        <form>
+            <div class="double">
+                <div class="form-expence">
+                    <label for="">EXPENCE:</label>
+                    <input id="expence" type="text" placeholder="Enter the product">
+                </div>
+                <div class="form-paid">
+                    <label for="">PRİCE:</label>
+                    <input id="paids" type="number" placeholder="Enter price..">
+                </div>
+                
+            </div>
+            <div class="double">
+                <div class="form-state">
+                    <input type="checkbox" name="" id="status-input">
+                    <label for="status-input" class="checkbox_paid">PAİD</label>
+                </div>
+                <button class="add-btn">Add</button>
+            </div>
+        </form>
+
+        <div class="totals">
+            Total Expenditure: <span id="total-information">0</span>$
+        </div>
+
+        <select id="filter-select">
+            <option value="all">ALL</option>
+            <option value="paid">PAİD</option>
+            <option value="not-paid">NOT PAİD</option>
+        </select>
+
+        <div class="listt"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
